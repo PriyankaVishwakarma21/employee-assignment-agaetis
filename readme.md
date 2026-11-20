@@ -3,6 +3,10 @@
 
 In this you can add, update, delete and get all the employees data
 
+## node version
+```
+node version: v24.18.1
+```
 
 ## Setup
 clone this repo
@@ -26,6 +30,7 @@ npm run dev
 
 frontend: cd employees
 ```
+npm install
 npm run dev
 ```
 
