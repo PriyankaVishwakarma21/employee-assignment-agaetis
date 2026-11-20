@@ -7,9 +7,7 @@ export class EmployeeController {
 
   async create(req: Request, res: Response) {
     try {
-      console.log("Employee created:", req.body);
       const employee = await employeeService.createEmployee(req.body);
-      console.log("Employee created successfully:", employee);
       return res.status(201).json({
         success: true,
         message: "Employee created successfully",
@@ -29,9 +27,7 @@ export class EmployeeController {
 
   async getAll(req: Request, res: Response) {
     try {
-      console.log('get employees')
       const employees = await employeeService.getAllEmployees();
-      console.log('Employee list: ', employees)
       return res.status(200).json({
         success: true,
         data: employees,

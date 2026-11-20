@@ -37,7 +37,6 @@ app.use(express.json());
 
 // Test route
 app.get("/", (req, res) => {
-  console.log("Received request at /");
   res.send("Welcome to the Employee Management API");
 });
 
